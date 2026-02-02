@@ -1,0 +1,1 @@
+/home/hamzeh-khanpour/MG5_aMC_v3_6_6/singletop_FCNC_LHmuC_SM/SubProcesses/P1_bxmup_mupwpux_wp_epvl/matrix1_orig.f

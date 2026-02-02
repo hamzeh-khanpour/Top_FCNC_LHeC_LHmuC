@@ -1,0 +1,139 @@
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c      written by the UFO converter
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+ckmblock 1 mdl_cabi
+
+newcoup 1 mdl_ReXLut
+
+newcoup 2 mdl_ImXLut
+
+newcoup 3 mdl_ReXRut
+
+newcoup 4 mdl_ImXRut
+
+newcoup 5 mdl_ReXLct
+
+newcoup 6 mdl_ImXLct
+
+newcoup 7 mdl_ReXRct
+
+newcoup 8 mdl_ImXRct
+
+newcoup 9 mdl_ReKLut
+
+newcoup 10 mdl_ImKLut
+
+newcoup 11 mdl_ReKRut
+
+newcoup 12 mdl_ImKRut
+
+newcoup 13 mdl_ReKLct
+
+newcoup 14 mdl_ImKLct
+
+newcoup 15 mdl_ReKRct
+
+newcoup 16 mdl_ImKRct
+
+newcoup 17 mdl_ReZetaLut
+
+newcoup 18 mdl_ImZetaLut
+
+newcoup 19 mdl_ReZetaRut
+
+newcoup 20 mdl_ImZetaRut
+
+newcoup 21 mdl_ReZetaLct
+
+newcoup 22 mdl_ImZetaLct
+
+newcoup 23 mdl_ReZetaRct
+
+newcoup 24 mdl_ImZetaRct
+
+newcoup 25 mdl_ReEtaLut
+
+newcoup 26 mdl_ImEtaLut
+
+newcoup 27 mdl_ReEtaRut
+
+newcoup 28 mdl_ImEtaRut
+
+newcoup 29 mdl_ReEtaLct
+
+newcoup 30 mdl_ImEtaLct
+
+newcoup 31 mdl_ReEtaRct
+
+newcoup 32 mdl_ImEtaRct
+
+newcoup 33 mdl_ReLambdaLut
+
+newcoup 34 mdl_ImLambdaLut
+
+newcoup 35 mdl_ReLambdaRut
+
+newcoup 36 mdl_ImLambdaRut
+
+newcoup 37 mdl_ReLambdaLct
+
+newcoup 38 mdl_ImLambdaLct
+
+newcoup 39 mdl_ReLambdaRct
+
+newcoup 40 mdl_ImLambdaRct
+
+sminputs 1 aEWM1
+
+sminputs 2 mdl_Gf
+
+sminputs 3 aS
+
+yukawa 1 mdl_ymdo
+
+yukawa 2 mdl_ymup
+
+yukawa 3 mdl_yms
+
+yukawa 4 mdl_ymc
+
+yukawa 5 mdl_ymb
+
+yukawa 6 mdl_ymt
+
+yukawa 11 mdl_yme
+
+yukawa 13 mdl_ymm
+
+yukawa 15 mdl_ymtau
+
+mass 23 mdl_MZ
+
+mass 11 mdl_Me
+
+mass 13 mdl_MMU
+
+mass 15 mdl_MTA
+
+mass 2 mdl_MU
+
+mass 4 mdl_MC
+
+mass 6 mdl_MT
+
+mass 1 mdl_MD
+
+mass 3 mdl_MS
+
+mass 5 mdl_MB
+
+mass 25 mdl_MH
+
+decay 23 mdl_WZ
+
+decay 24 mdl_WW
+
+decay 6 mdl_WT
+
+decay 25 mdl_WH

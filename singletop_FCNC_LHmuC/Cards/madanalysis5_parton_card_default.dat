@@ -1,0 +1,49 @@
+# Uncomment the line below to skip this analysis altogether
+# @MG5aMC skip_analysis
+
+@MG5aMC stdout_lvl=INFO
+
+@MG5aMC inputs = *.lhe
+@MG5aMC analysis_name = analysis1
+
+# Multiparticle definition
+define vl = 12 14 16
+define vl~ = -16 -14 -12
+define invisible = ve vm~ vm vt ve~ vt~ vl vl~
+
+# Histogram drawer (options: matplotlib or root)
+set main.graphic_render = root
+
+# Global event variables
+plot THT   40 0 500 [logY]
+plot MET   40 0 500 [logY]
+plot SQRTS 40 0 500 [logY]
+# PT and ETA distributions of all particles
+plot  PT(t[1]) 40 0  500 [logY interstate]
+plot ETA(t[1]) 40 -10 10 [logY interstate]
+plot  PT(mu+[1]) 40 0  500 [logY]
+plot ETA(mu+[1]) 40 -10 10 [logY]
+# Invariant-mass distributions
+plot M(t[1] mu+[1]) 40 0  500 [logY allstate]
+# Angular distance distributions
+plot DELTAR(t[1],mu+[1]) 40 0 10 [logY allstate]
+# PT and ETA distributions of all particles
+plot  PT(b[1]) 40 0  500 [logY]
+plot ETA(b[1]) 40 -10 10 [logY]
+plot  PT(mu+[1]) 40 0  500 [logY]
+plot ETA(mu+[1]) 40 -10 10 [logY]
+plot  PT(l+[1]) 40 0  500 [logY]
+plot ETA(l+[1]) 40 -10 10 [logY]
+# Invariant-mass distributions
+plot M(b[1] l+[1]) 40 0  500 [logY ]
+plot M(b[1] mu+[1]) 40 0  500 [logY ]
+plot M(b[1] mu+[1] l+[1]) 40 0  500 [logY ]
+plot M(mu+[1] l+[1]) 40 0  500 [logY ]
+# Angular distance distributions
+plot DELTAR(b[1],l+[1]) 40 0 10 [logY ]
+plot DELTAR(b[1],mu+[1]) 40 0 10 [logY ]
+plot DELTAR(mu+[1],l+[1]) 40 0 10 [logY ]
+# Invisible
+plot MT_MET(b[1]) 40 0  500 [logY]
+plot MT_MET(mu+[1]) 40 0  500 [logY]
+plot MT_MET(l+[1]) 40 0  500 [logY]
