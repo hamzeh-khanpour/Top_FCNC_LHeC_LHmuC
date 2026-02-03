@@ -13,9 +13,9 @@ a_LHmuC_tqZ = 8.387
 a_LHmuC_tqgamma = 40.74
 
 # --------------------------------------------------
-# Coupling range
+# Coupling range (linear scale: 10^-5 to 10^-1)
 # --------------------------------------------------
-kappa = np.linspace(0.0, 0.1, 500)
+kappa = np.linspace(1e-5, 1e-1, 500)
 
 # --------------------------------------------------
 # Cross sections: sigma = a * kappa^2
@@ -42,6 +42,9 @@ plt.plot(kappa, sigma_LHmuC_tqZ,
 
 plt.plot(kappa, sigma_LHmuC_tqgamma,
          lw=2, ls='--', label=r'LH$\mu$C@3.7 TeV ($tq\gamma$)')
+
+plt.yscale('log')
+plt.ylim(1e-6, 1e0)
 
 plt.xlabel(r'Anomalous coupling $\kappa$', fontsize=13)
 plt.ylabel(r'$\sigma_{\mathrm{FCNC}}$ [pb]', fontsize=13)
